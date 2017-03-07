@@ -61,7 +61,7 @@ for cell in ws['4']:
 col_count = ws.max_column
 
 # Friendliness
-property_address = raw_input("Copy property page address and paste here with right click, then press enter"
+property_address = raw_input("Copy property page address and paste here with right click, then press enter")
 
 # For each contact
 
