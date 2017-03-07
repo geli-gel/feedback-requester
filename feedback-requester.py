@@ -60,17 +60,19 @@ for cell in ws['4']:
 
 col_count = ws.max_column
 
+# Friendliness
+property_address = raw_input("Copy property page address and paste here with right click, then press enter"
+
 # For each contact
 
-
-print "filling out form for <property address>..." ####### type in address form is being sent for, and change url below
+print "filling out form for " + property_address + "..."
 
 for contact in range(0,col_count):
 
 	# get form from webpage
 
 	br = mechanize.Browser()
-	br.open("<property webpage>") ####### property page url 
+	br.open(property_address)
 	br.form=list(br.forms())[2]  # the correct form
 
 
